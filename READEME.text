@@ -1,5 +1,0 @@
-please change the dirctory of file in the HttpServer.java to your local address before you run it.
-```
-File file1 = new File ("/home/sa227/comp202/comp202Assignment2/404.html");
-```
-thanks
