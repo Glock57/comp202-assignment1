@@ -16,5 +16,6 @@
 
 4.  this task is creat the networ server---- SimpleClient.java ,SimpleServer.java  
 
-```for client: create a sotck connect to serversocket if connect to server then get the message from the server.
-for server:get the ip info from the connected socket then send the welcome message to this client socket.```
+```for client: create a sotck connect to serversocket if connect to server then get the message from the server.```
+
+```for server:get the ip info from the connected socket then send the welcome message to this client socket.```
