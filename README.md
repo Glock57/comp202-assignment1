@@ -26,6 +26,21 @@
 2. run the session will estract the file which client want to access
 3. as for the respond ,sever will find the file and send the respond text first(bufferedoutputstream),then send file with (bufferedoutputstream)
 
+## Assignment 3
+*this assignment is going to explain the functional of the TFTP server imply the UDP datagram socket*
+### for the TFTP server ----TFTP.java
+1. create a TFTP server and start to wrok
+2. sign random free port for udp,infinet loop to receive request
+3. extract the filename from request then use a new datagram stocket to send file
+4. check if the file exist,use fileInputstream to read data,here have two byte array which are used for different file size,if the file less than 521 byte then use `fis1.available()` to check the actual size then put datastream into packet to send
+5. after send the first packet,wait and receive the ACK packet.if the received ACK packet has the same block number then read the data from the bytearray and send packets
+6. if the request file dosen't exist,send error packet
+7. if doesn't receive the ack in time,recent the data packet base on the data block
+### for the TFTP client ----TFTPClient.java
+the client side have the same structure as the server side,except the output which will use `DataOutputStream` receive the data ,and convert as bytearray(`ByteArrayOutputStream.toByteArray()`) then output the file(`FileOutputStream.write()`)
+
+## Assignment 4
+
 
 
 	
