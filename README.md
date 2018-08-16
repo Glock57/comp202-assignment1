@@ -19,3 +19,13 @@
 ```for client: create a sotck connect to serversocket if connect to server then get the message from the server.```
 
 ```for server:get the ip info from the connected socket then send the welcome message to this client socket.```
+
+## Assignment 2
+*assignment is base on the HTTP server to receive the request,processing it and send reply(HTML file) for the request*
+1. create http server and distribute session base on the connnect client(assign the client stocket to httpserversession) 
+2. run the session will estract the file which client want to access
+3. as for the respond ,sever will find the file and send the respond text first(bufferedoutputstream),then send file with (bufferedoutputstream)
+
+
+
+	
