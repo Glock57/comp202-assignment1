@@ -40,6 +40,13 @@
 the client side have the same structure as the server side,except the output which will use `DataOutputStream` receive the data ,and convert as bytearray(`ByteArrayOutputStream.toByteArray()`) then output the file(`FileOutputStream.write()`)
 
 ## Assignment 4
+*this assignment use the multicastSocket to create the chat room*
+**the difference with TFTP is that multicastSocket will specify the address and connected port**
+ 
+
+
+## Assignment 5
+**
 
 
 
