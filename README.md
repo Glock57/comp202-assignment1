@@ -46,7 +46,24 @@ the client side have the same structure as the server side,except the output whi
 
 
 ## Assignment 5
-**
+*current assignmnet is focus on the secure file transfer with TLS*
+1. the fundemantal idea will be used is the signing key to varify the identity
+*key preparation:*
+*1.create a certificate*
+*2.change the format whcih java can read*
+*3.generate key pair for server*
+*4.derive a certificate signing request for the server certificate*
+*5.sign the server certificate by teh fack CA(certificate authority)*
+*6.put the client certificate and server certificate into server's keystore*
+2. server
+*use server socket factory to get server socket by the port number*
+*enable the TLS protocol*
+*send file from the name given by client and bufferedoutputstream to send file*
+3. client
+*establish a socket and set the protoclos*
+*strat the handshake,send the request fliename*
+*get the session from server,then read the certificate,check the id by the common name from certificate*
+*receive the file from the server*
 
 
 
